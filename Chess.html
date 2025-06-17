@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página sobre Xadrez</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sigmar-regular {
+            font-family: "Sigmar", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+
+
+        }
+
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .box {
+            width: 80%;
+            padding: 20px;
+            margin: 15px auto;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        .historia {
+            display: flex;
+            flex-direction: column;
+            background-color: #2e7d32;
+
+        }
+
+        .historia h2 {
+            font-family: 'Sigmar', sans-serif;
+            font-size: 40px;
+        }
+        .historia-conteudo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            align-items: flex-start;
+        }       
+
+        .historia-conteudo p {
+            padding: 10px;
+            flex: 1;
+        }
+
+        .regras {
+            display: flex;
+            flex-direction: column;
+            background-color: #1b5e20;
+        }
+
+        .regras h2 {
+            font-family: 'Sigmar', sans-serif;
+            font-size: 40px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .regras-conteudo {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .regras-conteudo p {
+            padding: 10px;
+            flex: 1;
+        }
+
+        .regras-conteudo img {
+            flex: 1;
+            max-width: 50%;
+            margin-left: 20px;
+        }
+
+        .estrategias {
+            display: flex;
+            flex-direction: column;
+            background-color: #4caf50;
+        }
+
+        .estrategias h2 {
+            font-family: 'Sigmar', sans-serif;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .estrategias-conteudo {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .estrategias-conteudo img {
+            flex: 1;
+            max-width: 50%;
+            margin-right: 20px;
+        }
+
+        .estrategias-conteudo p {
+            flex: 2;
+            padding: 10px;
+        }
+
+        .leitura {
+            display: flex;
+            flex-direction: column;
+            background-color: #315e0d
+        }
+
+        .leitura h2 {
+            font-family: 'Sigmar', sans-serif;
+            font-size: 40px;
+        }
+
+        .leitura-conteudo {
+            display: flex;
+        }
+
+        .leitura-conteudo p {
+            padding: 10px;
+        }
+
+
+        img {
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 20px;
+            background-color: #333;
+            color: rgb(173, 255, 161);
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bem-vindo ao Mundo do Xadrez!</h1>
+        <nav>
+            <ul>
+                <li><a href="#historia">História</a></li>
+                <li><a href="#regras">Regras Básicas</a></li>
+                <li><a href="#leitura-de-movimento">Como ler Movimentos</a></li>
+                <li><a href="#estrategias">Estratégias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div id="historia" class="box historia">
+            <h2>História do Xadrez</h2>
+            <div class="historia-conteudo">
+                <p>O xadrez surgiu na Índia por volta do século VI com o Chaturanga, um jogo que representava um
+                    exército em
+                    batalha. Ele se espalhou pela Pérsia, onde foi chamado de Shatranj, e depois pelo mundo islâmico,
+                    chegando à Europa na Idade Média. No século XV, as regras modernas começaram a se formar, tornando o
+                    jogo mais dinâmico. No século XIX, surgiram os primeiros torneios e enxadristas famosos, como Paul
+                    Morphy. No século XX, campeonatos mundiais consolidaram o xadrez competitivo, e hoje ele é
+                    amplamente
+                    praticado, inclusive com o auxílio de inteligência artificial.</p>
+                <img src="https://static.lojaodosesportes.com.br/product_images/1500x1500/w/084/xadrez__57445.jpg" />
+            </div>
+        </div>
+
+        <div id="regras" class="box regras">
+            <h2>Regras Básicas do Xadrez</h2>
+            <div class="regras-conteudo"></div>
+            <p>Cada jogador começa com 16 peças, e o objetivo é dar xeque-mate no rei adversário. As peças e seus
+                movimentos são:
+
+                Peão: Move-se uma casa para frente, mas captura na diagonal. No primeiro movimento, pode avançar duas
+                casas. Ao chegar na última fileira, pode ser promovido a qualquer peça (exceto rei).
+                Torre: Move-se em linha reta, tanto na vertical quanto na horizontal, sem limite de casas.
+                Cavalo: Move-se em "L" (duas casas em uma direção e uma para o lado). É a única peça que pode "pular"
+                outras.
+                Bispo: Move-se apenas na diagonal, sem limite de casas. Cada bispo fica em uma cor (clara ou escura)
+                durante toda a partida.
+                Rainha: A peça mais poderosa, pode se mover quantas casas quiser na vertical, horizontal ou diagonal.
+                Rei: Move-se apenas uma casa em qualquer direção. Se estiver ameaçado sem possibilidade de fuga, ocorre
+                o xeque-mate, encerrando a partida.
+                O jogo também conta com movimentos especiais, como o roque, a captura en passant e a promoção do peão..
+            </p>
+            <img
+                src="https://img.freepik.com/fotos-premium/serie-de-pecas-de-xadrez-brancas-antes-do-jogo-no-tabuleiro-preto-e-branco-sobre-fundo-preto_224539-305.jpg" />
+        </div>
+    </div>
+
+    <div id="leitura-de-movimento" class="box leitura">
+        <h2>Como ler Movimentos</h2>
+        <div class="leitura-conteudo">
+            <p>Como Ler Movimentos no Xadrez
+                Os movimentos no xadrez são registrados em notação algébrica, um sistema simples e eficiente para
+                descrever as jogadas.
+
+                Principais Elementos da Notação Algébrica:
+                Letras (a-h): Representam as colunas do tabuleiro.
+                Números (1-8): Representam as fileiras.
+                Confira na imagem abaixo as Letras e Numeros no canto.
+                Símbolos das peças:
+                R (Rei), D (Dama), T (Torre), B (Bispo), C (Cavalo).
+                Os peões não possuem letra; apenas indicamos a casa para onde se movem.
+                Exemplos de Movimentos:
+                e4 – O peão da coluna "e" avança para a casa e4.
+                Cf3 – O cavalo (C) vai para f3.
+                Bb5 – O bispo (B) vai para b5.
+                0-0 – Roque pequeno (rei e torre do lado do rei).
+                0-0-0 – Roque grande (rei e torre do lado da dama).
+                exd5 – O peão de "e" captura uma peça na casa d5.
+                Dxf7# – A dama captura uma peça em f7 e dá xeque-mate.
+            </p>
+            <img
+                src="https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/ColinStapczynski/phprnyp9x.png" />
+        </div>
+    </div>
+
+    <div id="estrategias" class="box estrategias">
+        <h2>Estratégias Básicas</h2>
+        <div class="estrategias-conteudo">
+            <p>Para aumentar suas chances de vitória no xadrez, siga princípios fundamentais:
+                Controle o centro: As casas centrais (d4, d5, e4, e5) são essenciais, pois oferecem maior
+                mobilidade
+                às peças.
+                Desenvolva suas peças: Mova cavalos e bispos para posições ativas antes de sair com a dama ou as
+                torres.
+                Proteja seu rei: O roque é uma jogada importante para garantir segurança ao rei e conectar as
+                torres.
+                Abertura Italiana
+                A Abertura Italiana é uma das mais clássicas do xadrez, focada no rápido desenvolvimento das
+                peças e
+                no controle do centro. Ela se inicia com os seguintes lances:
+
+                e4 – O branco ocupa o centro e abre caminho para o bispo e a dama.
+                e5 – O preto responde igualmente, disputando o centro.
+                Cf3 – O branco ataca o peão e5 e desenvolve um cavalo.
+                Cc6 – O preto defende o peão e desenvolve uma peça.
+                Bc4 – O branco coloca o bispo de forma ativa, mirando o frágil ponto f7 do adversário.
+                Essa abertura leva a posições equilibradas, permitindo tanto ataques rápidos quanto
+                desenvolvimento
+                sólido.</p>
+            <img src="https://preview.redd.it/yotn4omcmxga1.jpg?auto=webp&s=8729aa7b3b15d9ba35b4d6522cf543958d56d5b1" />
+        </div>
+    </div>
+
+    <footer>
+        <p>Confira mais sobre Xadrez:</p>
+        <p><a href="https://www.chess.com" target="_blank" style="color: #4caf50;">Acesse o Chess.com</a></p>
+        <p><a href="https://www.twitch.tv/chess" target="_blank" style="color: #4caf50;">twitch.tv - Chess</a></p>
+    </footer>
+</body>
+
+</html>
